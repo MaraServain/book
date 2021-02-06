@@ -4,7 +4,7 @@
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
 
     <style>
-    *{ margin: 0; padding:0;
+    *{ margin: 0; padding:1;
       box-sizing: border-box;
       font-family: Arial, Helvetica,sans-serif;}
 
@@ -12,33 +12,82 @@
     header{
       /background: #EAF2D7;
       font-size: 30px;
-    }
-
-    article {
-      width: 25%;
-      height: 8%;
       text-align: center;
+      margin-top: 10%;
 
-      float : left;
-      background: #B3DEE2;
-      /*border : 1px dotted red;*/
+
     }
+
+    .sous_titre {
+
+      text-align: center;
+      margin-bottom: 10%;
+    }
+
+
+
+    nav{
+
+
+      text-align: center;
+      background: white;
+      margin: 20px 0;
+      padding: 10px;
+
+
+      }
+      .button3:hover{
+     background-color:#4095c6;}
+
+    nav a {
+      border-radius:2em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family:'Roboto',sans-serif;
+      font-weight:300;
+      background-color:#4eb5f1;
+      text-align: center;
+      color:#FFFFFF;
+      transition: all 0.2s;
+      padding:0.3em 1.2em;
+      margin: 2px;
+
+    }
+
+    #bouton_1{
+    background-color: blue;
+    margin-left: ;
+
+    }
+
+    #bouton_4{
+    background-color: blue;
+    margin-right:;
+    }
+
+
+
+
+
+
 
     .GrandeBoite {
 
 
-      flex-wrap: wrap;
+
+
       height: 100%;
-      text-align: center;
-
-      margin-top: 100px;
-      margin-left: 20%;
 
 
-      margin-right: 0%;
+      margin-top: 20%;
+      /*margin-left: 0%;*/
+      max-width: 100%;
+
+      margin-left:20%;
+      margin-right: 20%;
 
 
-      float : left;
+
       /*background: green;*/
 
 
@@ -47,13 +96,13 @@
       display : flex;
       flex-wrap: wrap;
       width: 25%;
-      height: 61%;
+      height: 64%;
       text-align: center;
 
 
-      margin-left: 10px;
+      /*margin-left: 10px;
       margin-right: 10px;
-      margin-bottom: 1px;
+      margin-bottom: 1px;*/
 
       float : left;
       /*background: blue;*/
@@ -66,33 +115,36 @@
     .PetiteBoite2 {
       display: flex;
       flex-wrap: wrap;
-      width: 70%;
+      width: 75%;
       height: 30%;
       text-align: center;
 
 
-      margin-left: 1px;
+      /*margin-left: 1px;
       margin-right: 1px;
-      margin-bottom: 1%;
+      margin-bottom: 1%;*/
 
       float : left;
       /*background: red;*/
 
       flex-grow: 1;
 
+
     }
 
     .PetiteBoite3 {
       display: flex;
-      flex-wrap: wrap;
-      width: 70%;
-      height: 30%;
+
+      width: 75%;
+      height: 35%;
       text-align: center;
 
 
-      margin-left: 1px;
-      margin-right: 1px;
-      margin-bottom: 1%;
+      /*margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 1%;*/
+
+
 
       float : left;
       /*background: red;*/
@@ -103,12 +155,12 @@
     .PetiteBoite4 {
       display: flex;
       flex-wrap: wrap;
-      width: 97%;
+      width: 100%;
       height: 30%;
       text-align: center;
 
 
-      margin-left: 10px;
+      /*margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 1%;
 
@@ -122,10 +174,10 @@
         width: 100%;
 
         justify-content: center;
-        height: 38%;
+        height: 40%;
          min-height: 0;
          min-width: 0;
-         margin-bottom: 10px;
+         margin-bottom: 5px;
 
 
 }
@@ -138,10 +190,10 @@
         width: 100%;
 
         justify-content: center;
-        height: 38%;
+        height: 40%;
          min-height: 0;
          min-width: 0;
-         margin-bottom: 10px;
+         margin-bottom: 5px;
       }
 
       .Image3 {
@@ -166,7 +218,7 @@
         justify-content: left;
          min-height: 0;
          min-width: 0;
-         margin-right : 8px;
+         margin-right :
 
 
 
@@ -177,30 +229,30 @@
 
         display: flex;
         overflow:hidden;
-        width: 33%;
-        z-index: 1;
+        width: 35%;
+
 
         justify-content: center;
           height: 100%;
          min-height: 0;
          min-width: 0;
-         margin-bottom: 10px;
-         background : pink;
+
+
       }
 
 
       .Image6 {
         display: flex;
         overflow:hidden;
-        width: 38%;
-        z-index: 1;
+        width: 40%;
+
 
         justify-content: center;
           height: 100%;
          min-height: 0;
          min-width: 0;
-         margin-bottom: 10px;
-         background : pink;
+
+
 
       }
 
@@ -212,12 +264,12 @@
         z-index: 1;
 
         justify-content: center;
-          height: 100%;
+        height: 100%;
          min-height: 0;
          min-width: 0;
-         margin-bottom: 10px;
-         margin-right: 10px;
-         background : pink;
+
+        /*margin-right: 10px;*/
+
 
 
 
@@ -238,57 +290,52 @@
 
       }
 
-  }
+
 
 
    </style>
 
   </head>
   <body>
-    <header> Mara</header>
+    <header> Bienvenue sur mon Portfolio !</header>
+    <p class="sous_titre"> Mara Servain</p>
 
 
-    <article >
-      <a href="book_home_0.html"> Home</a>
-    </article>
-    <article>
-      <a href="book_About_0.html">About</a>
-    </article>
-    <article>
-      <a href="book_porfolio_0.html"> Porfolio </a>
-    </article>
-    <article>
-      <a href="book_contact_0.html"> Contact </a>
-    </article>
+    <nav>
+    <a href="book_home_0.html" class="button"  id="bouton_1" >Home </a>
+    <a href="book_About_0.html" class="button" id="bouton_2">A propos de moi</a>
+    <a href="book_porfolio_0.html" class="button" id="bouton_3">Portfolio</a>
+    <a href="book_contact_0.html" class="button" id="bouton_4">Contact </a>
+    </nav>
 
   <div class="GrandeBoite">
 
 
     <div class="PetiteBoite1">
         <div class="Image1">
-          <img src="https://picsum.photos/300/200/?random" class=test > </div>
+          <img src="image/logo_v1.png" class=test height="500px" width="500px"  > </div>
           <div class="Image2">
-          <img src="https://picsum.photos/300/200/?random" class=test ></div>
+          <img src="https://picsum.photos/500/500/?random" class=test ></div>
         <div class="Image3">
-        <img src="https://picsum.photos/300/140/?random" class=test ></div>
+        <img src="https://picsum.photos/450/450/?random" class=test ></div>
     </div>
 
 
       <div class="PetiteBoite2">
         <div class="Image4">
-        <img src="https://picsum.photos/600/600/?random" class=test ></div>
+        <img src="https://picsum.photos/800/800/?random" class=test ></div>
         <div class="Image5">
-        <img src="https://picsum.photos/300/200/?random" class=test ></div>
+        <img src="https://picsum.photos/400/500/?random" class=test ></div>
 
       </div>
       <div class="PetiteBoite3">
         <div class="Image8">
-       <img src="https://picsum.photos/900/600/?random" class=test ></div>
+       <img src="https://picsum.photos/1080/1200/?random" class=test ></div>
       </div>
 
       <div class="PetiteBoite4">
         <div class="Image7">
-        <img src="https://picsum.photos/700/300/?random" class=test ></div>
+        <img src="https://picsum.photos/1000/300/?random" class=test ></div>
         <div class="Image6">
         <img src="https://picsum.photos/700/300/?random" class=test ></div>
       </div>
