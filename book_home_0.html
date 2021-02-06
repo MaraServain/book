@@ -8,9 +8,9 @@
       box-sizing: border-box;
       font-family: Arial, Helvetica,sans-serif;}
 
-    body{ background: #EFCFE3;}
+    /*body{ background: #EFCFE3;}*/
     header{
-      background: #EAF2D7;
+      /background: #EAF2D7;
       font-size: 30px;
     }
 
@@ -25,19 +25,27 @@
     }
 
     .GrandeBoite {
-      width: 100%;
+
+
+      flex-wrap: wrap;
       height: 100%;
       text-align: center;
 
       margin-top: 100px;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 20%;
+
+
+      margin-right: 0%;
+
 
       float : left;
-      background: green;
+      /*background: green;*/
+
 
     }
     .PetiteBoite1 {
+      display : flex;
+      flex-wrap: wrap;
       width: 25%;
       height: 61%;
       text-align: center;
@@ -48,11 +56,16 @@
       margin-bottom: 1px;
 
       float : left;
-      background: blue;
+      /*background: blue;*/
+
+
+      flex-grow: 1;
 
 
     }
     .PetiteBoite2 {
+      display: flex;
+      flex-wrap: wrap;
       width: 70%;
       height: 30%;
       text-align: center;
@@ -63,12 +76,15 @@
       margin-bottom: 1%;
 
       float : left;
-      background: red;
+      /*background: red;*/
 
+      flex-grow: 1;
 
     }
 
     .PetiteBoite3 {
+      display: flex;
+      flex-wrap: wrap;
       width: 70%;
       height: 30%;
       text-align: center;
@@ -79,69 +95,151 @@
       margin-bottom: 1%;
 
       float : left;
-      background: red;
+      /*background: red;*/
 
+      flex-grow: 1;
 
     }
     .PetiteBoite4 {
-      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 97%;
       height: 30%;
       text-align: center;
 
 
       margin-left: 10px;
-      margin-right: 1px;
+      margin-right: 10px;
       margin-bottom: 1%;
 
       float : left;
-      background: orange;
+      /*background: orange;*/
+      flex-grow: 1;
 }
       .Image1 {
+        display: flex;
+        overflow:hidden;
         width: 100%;
+
+        justify-content: center;
         height: 38%;
-        text-align: center;
-        background: Gray;
-        margin-bottom: 2%;
-      }
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
+
+
+}
+
+
 
       .Image2 {
+        display: flex;
+        overflow:hidden;
         width: 100%;
+
+        justify-content: center;
         height: 38%;
-        text-align: center;
-        background: Gray;
-        margin-bottom: 2%;
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
       }
 
       .Image3 {
+        display: flex;
+        overflow:hidden;
         width: 100%;
-        height: 22%;
-        text-align: center;
-        background: Gray;
+        height: 20%;
+        justify-content: center;
+         min-height: 0;
+         min-width: 0;
+
+
 
 
       }
 
       .Image4 {
+        display: flex;
+        overflow:hidden;
         width: 65%;
         height: 100%;
-        text-align: center;
-        background: purple;
-        margin-right:  2%;
+        justify-content: left;
+         min-height: 0;
+         min-width: 0;
+         margin-right : 8px;
 
 
+
+
+      }
+
+      .Image5 {
+
+        display: flex;
+        overflow:hidden;
+        width: 33%;
+        z-index: 1;
+
+        justify-content: center;
+          height: 100%;
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
+         background : pink;
       }
 
 
       .Image6 {
-        width: 60%;
-        height: 100%;
-        text-align: center;
-        align-items: flex-end;
-        background: yellow;
-        margin-right:  2%;
-}
+        display: flex;
+        overflow:hidden;
+        width: 38%;
+        z-index: 1;
+
+        justify-content: center;
+          height: 100%;
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
+         background : pink;
 
       }
+
+      .Image7{
+
+        display: flex;
+        overflow:hidden;
+        width: 60%;
+        z-index: 1;
+
+        justify-content: center;
+          height: 100%;
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
+         margin-right: 10px;
+         background : pink;
+
+
+
+
+
+
+      }
+      .Image8 {
+        display: flex;
+        overflow:hidden;
+        width: 100%;
+
+        justify-content: center;
+        height: 100%;
+         min-height: 0;
+         min-width: 0;
+         margin-bottom: 10px;
+
+      }
+
+  }
+
 
    </style>
 
@@ -164,29 +262,41 @@
     </article>
 
   <div class="GrandeBoite">
+
+
     <div class="PetiteBoite1">
         <div class="Image1">
-          <img src=""https://picsum.photos/400/400/?random"" alt="">
-        </div>
-        <div class="Image2"></div>
-        <div class="Image3"></div>
+          <img src="https://picsum.photos/300/200/?random" class=test > </div>
+          <div class="Image2">
+          <img src="https://picsum.photos/300/200/?random" class=test ></div>
+        <div class="Image3">
+        <img src="https://picsum.photos/300/140/?random" class=test ></div>
     </div>
+
+
       <div class="PetiteBoite2">
-        <div class="Image4"></div>
-        <div class="Image5"></div>
+        <div class="Image4">
+        <img src="https://picsum.photos/600/600/?random" class=test ></div>
+        <div class="Image5">
+        <img src="https://picsum.photos/300/200/?random" class=test ></div>
 
       </div>
       <div class="PetiteBoite3">
-
+        <div class="Image8">
+       <img src="https://picsum.photos/900/600/?random" class=test ></div>
       </div>
+
       <div class="PetiteBoite4">
-        <div class="Image7"></div>
-        <div class="Image6"></div>
+        <div class="Image7">
+        <img src="https://picsum.photos/700/300/?random" class=test ></div>
+        <div class="Image6">
+        <img src="https://picsum.photos/700/300/?random" class=test ></div>
+      </div>
 
   </div>
 
-    </div>
-    "https:
+
+
 
 
 
